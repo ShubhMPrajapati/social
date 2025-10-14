@@ -1,0 +1,162 @@
+/* ========== GENERAL STYLES ========== */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #8e88bd, #a3c9f1);
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Make all links look consistent */
+a {
+  text-decoration: none;
+  color: #5a4aeb;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff6f61;
+}
+
+/* Container for main content */
+.mycontent {
+  padding: 120px 30px 50px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  overflow-y: auto;
+}
+
+/* ========== NAVBAR STYLING ========== */
+.navbar {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #5a4aeb !important;
+}
+
+.navbar-nav .nav-link {
+  margin-left: 15px;
+  font-weight: 500;
+  color: #333 !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff6f61 !important;
+}
+
+/* ========== POST CARD STYLING ========== */
+.post-page .post, .card.card-with-shadow {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-page .post:hover, .card.card-with-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* ========== GROUP CARD STYLING ========== */
+.group li a {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.group li a:hover {
+  background: rgba(90, 74, 235, 0.1);
+}
+
+/* ========== BUTTONS ========== */
+.btn {
+  border-radius: 50px;
+  padding: 10px 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #5a4aeb;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #4433b8;
+  transform: scale(1.05);
+}
+
+.btn-warning {
+  background: #ffb400;
+  border: none;
+}
+
+.btn-warning:hover {
+  background: #ffa500;
+  transform: scale(1.05);
+}
+
+.btn-danger {
+  background: #ff6f61;
+  border: none;
+}
+
+.btn-danger:hover {
+  background: #e64a45;
+  transform: scale(1.05);
+}
+
+/* ========== TYPOGRAPHY ========== */
+h1, h2, h3, h4, h5 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #5a4aeb;
+  margin-bottom: 15px;
+}
+
+p, small {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* ========== FOOTER NOTE ========== */
+#note {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(249, 241, 204, 0.95);
+  font-family: 'Arial', sans-serif;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .mycontent {
+    padding: 100px 15px 30px 15px;
+  }
+
+  .navbar-nav .nav-link {
+    margin-left: 10px;
+  }
+
+  .post-page .post, .card.card-with-shadow {
+    padding: 15px;
+  }
+}
