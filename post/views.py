@@ -56,7 +56,7 @@ class CreatePost(LoginRequiredMixin, SelectRelatedMixin, generic.CreateView):
 
     def form_valid(self, form):
         form.instance.user = self.request.user
-
+        
         # Prevent duplicate posts by the same user
         if models.Post.objects.filter(user=self.request.user, message=form.instance.message).exists():
             form.add_error("message", "You have already posted this message.")
